@@ -25,4 +25,4 @@ def find_plates(text):
         plate = "".join(match.groups()).upper()
         results.append(plate)
 
-    return results
+    return list(dict.fromkeys(results))
